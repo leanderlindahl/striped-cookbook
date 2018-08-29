@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class TagsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('tags')->insert(
+			[
+				'name' => 'Alfa'
+			]
+		);
+		DB::table('tags')->insert(
+			[
+				'name' => 'Beta'
+			]
+		);
+		DB::table('tags')->insert(
+			[
+				'name' => 'Gamma'
+			]
+		);
+		DB::table('tags')->insert(
+			[
+				'name' => 'Epsilon'
+			]
+		);
+		DB::table('tags')->insert(
+			[
+				'name' => 'Theta'
+			]
+		);
+    }
+}
